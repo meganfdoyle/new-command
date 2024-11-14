@@ -1,12 +1,12 @@
-//file system module
+#!/usr/bin/env node
 const fs = require('fs');
 
-//fs.readdir(path[,options],callback)
-//process doesn't require a require statement
-fs.readdir(process.cwd(), (err, filenames) => {
+//.mjs? import instead of require
+
+fs. readdir(process.cwd(), (err, filenames) => {
     if (err) {
         console.log(err);
     };
 
     console.log(filenames);
-});
+})
